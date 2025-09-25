@@ -1,28 +1,37 @@
 import React from "react";
 import hero from "./assets/hero.jpg";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
+import { } from './assets/noback/8.png'
 
 const App = () => {
   return (
-    <div className="h-screen">
-      <img src={hero} className="w-full h-full object-cover" />
-      <div className="bg-black/10">
-        <div className="flex flex-col justify-evenly  w-1/3 h-[25rem] absolute top-36 left-30">
-          <h2 className="text-5xl text-[#f9ce69] font-semibold">
-            Rennale <br /> Renuelly
-          </h2>
-          <p className="text-[1.2rem] text-gray-100">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-            reiciendis aperiam nulla maxime ea assumenda in ad libero
-            voluptatum! Ut laudantium dolorum quas tenetur doloribus
-            voluptatibus nam laboriosam temporibus mollitia?
-          </p>
-          <button className="bg-[#ffcc56] h-12 w-1/2 rounded-4xl shadow text-xl hover:shadow-2xl cursor-pointer">
-            Home page
-          </button>
+    <div className="w-full min-h-screen bg-[rgb(7,7,17)] overflow-scroll]">
+      <Navbar />
+      <div className="w-full h-[40em]">
+        <Hero />
+      </div>
+
+      <div className="w-full h-[30em] mt-35 flex items-center justify-evenly">
+        <div className="w-3/7 h-full bg-gray-500 flex flex-col items-center justify-evenly">
+          <div className="w-full h-2/10 font-bold text-5xl flex items-center justify-center text-gray-300">
+            Orange Benefits
+          </div>
+          <div className="w-full h-5/7 bg-gray-700 flex items-center justify-evenly">
+            <div className="w-30 h-3/6 bg-yellow-500">
+              <img src="" alt="" />
+            </div>
+            <div className="w-5/8 h-3/6 bg-yellow-500"></div>
+          </div>
         </div>
+        <div className="w-3/10 h-full bg-gray-500"></div>
+        <div></div>
       </div>
     </div>
   );
 };
 
 export default App;
+
+// bg-[rgb(15,15,23)
